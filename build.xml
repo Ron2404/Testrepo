@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
 <project basedir="." default="create" name="test">
+<target name="create" depends="delete">
+	<mkdir dir= "d1"/>
+	<mkdir dir= "d2"/>
+</target>
+
 <target name="delete">
-	<delete dir="d1"/>
-	<delete dir="d2"/>
+
+	<delete  dir="d1"/>
+	<delete  dir="d2"/>
 </target>
 </project>
